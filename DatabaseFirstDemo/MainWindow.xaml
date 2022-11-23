@@ -1,0 +1,28 @@
+﻿<Window x:Class="DatabaseFirstDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DatabaseFirstDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListView
+            x:Name="lvHouses"
+            Width="200"
+            Height="100"/>
+        <TextBox
+            x:Name="txtHouse"
+            Width="150"
+            Height="50"
+            Margin="0, 200, 0, 0"/>
+        <Button
+            x:Name="btnHouse"
+            Width="100"
+            Height="50"
+            Margin="300, 200, 0, 0"
+            Content="Add House" Click="btnHouse_Click"
+            />
+
+    </Grid>
+</Window>
