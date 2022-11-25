@@ -64,7 +64,7 @@ namespace DatabaseFirstDemo
 
             using (HarryPotterDbContext context = new())
             {
-                // R:et i CRUD (Remove)
+                // D:et i CRUD (DELETE)
                 House houseToRemove = context.Houses.Where(h => h.HouseId == selectedHouse.HouseId).FirstOrDefault();
 
                 context.Houses.Remove(houseToRemove);
